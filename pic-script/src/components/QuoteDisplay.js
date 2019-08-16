@@ -2,8 +2,6 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 const QuoteDisplay = (props) => {
-  console.log('quote props', props)
-
   return (
     <div className='centered'>
       {props.quoteIsLoading ? (
@@ -23,7 +21,6 @@ const QuoteDisplay = (props) => {
 }
 
 const mapStateToProps = (state) => {
-  console.log('quote state', state)
   return {
     quoteIsLoading: state.quoteReducer.quoteIsLoading,
     // quote: state.quoteReducer.quote,

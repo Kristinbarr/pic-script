@@ -12,7 +12,6 @@ export const getPic = () => {
     axios
       .get('https://picsum.photos/1000/600/')
       .then((res) => {
-        console.log('pic data', res)
         dispatch({ type: FETCH_PIC_SUCCESS, payload: res.data })
       })
       .catch((err) => {

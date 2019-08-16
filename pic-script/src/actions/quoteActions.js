@@ -18,7 +18,6 @@ export const getQuote = () => {
       //     dispatch({ type: FETCH_QUOTE_FAILURE, payload: err.response })
       //   })
 
-
       try {
       dispatch({ type: FETCH_QUOTE_SUCCESS })
     } catch (err) {
