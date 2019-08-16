@@ -1,20 +1,31 @@
+import {
+  FETCH_PIC_START,
+  FETCH_PIC_SUCCESS,
+  // FETCH_PIC_FAILURE
+} from '../actions'
+
 export const initialState = {
-  pic: '',
-  quote: {}
+  pic: 'https://picsum.photos/1000/600/',
+  picIsLoading: false,
+  error: ''
 }
 
-export const reducer = (state = initialState, action) => {
+export const picReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'GET_PIC':
+    case FETCH_PIC_START:
       return {
-        pic: action.payload
+        ...state,
+        pic: '',
+        picIsLoading: true,
+        error: ''
       }
-      break
-    case 'GET_QUOTE':
+    case FETCH_PIC_SUCCESS:
       return {
-        quote: action.payload
+        ...state,
+        picIsLoading: false,
+        pic: 'https://picsum.photos/1000/600/',
+        error: ''
       }
-
     default:
       return state
   }
