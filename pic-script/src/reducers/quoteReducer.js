@@ -1,3 +1,5 @@
+import seed from '../seedData'
+
 import {
   FETCH_QUOTE_START,
   FETCH_QUOTE_SUCCESS
@@ -5,7 +7,8 @@ import {
 } from '../actions'
 
 export const initialState = {
-  quote: {},
+  quote: seed,
+  singleQuote: seed[Math.floor(Math.random() * seed.length) + 0],
   quoteIsLoading: false,
   error: ''
 }
@@ -15,7 +18,8 @@ export const quoteReducer = (state = initialState, action) => {
     case FETCH_QUOTE_START:
       return {
         ...state,
-        quote: action.payload,
+        // quote: action.payload,
+        singleQuote: '',
         quoteIsLoading: true,
         error: ''
       }
@@ -23,7 +27,7 @@ export const quoteReducer = (state = initialState, action) => {
       return {
         ...state,
         quoteIsLoading: false,
-        quote: action.payload,
+        singleQuote: state.quote[Math.floor(Math.random() * 5)+ 0],
         error: ''
       }
     default:
