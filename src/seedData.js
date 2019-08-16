@@ -68,6 +68,125 @@ const seed = [
     senderName: '',
     senderLink: '',
     quoteLink: 'http://forismatic.com/en/990ad5bfcc/'
+  },
+  {
+    quoteText: 'He that is giddy thinks the world turns round.  ',
+    quoteAuthor: 'William Shakespeare ',
+    senderName: '',
+    senderLink: '',
+    quoteLink: 'http://forismatic.com/en/c59894ca6c/'
+  },
+  {
+    quoteText: 'Meaning is not what you start with but what you end up with.',
+    quoteAuthor: 'Peter Elbow',
+    senderName: '',
+    senderLink: '',
+    quoteLink: 'http://forismatic.com/en/437d42a707/'
+  },
+  {
+    quoteText: 'Whoever is happy will make others happy, too. ',
+    quoteAuthor: 'Mark Twain',
+    senderName: '',
+    senderLink: '',
+    quoteLink: 'http://forismatic.com/en/fbabb0a283/'
+  },
+  {
+    quoteText:
+      'Happiness does not come from having much, but from being attached to little.',
+    quoteAuthor: 'Cheng Yen',
+    senderName: '',
+    senderLink: '',
+    quoteLink: 'http://forismatic.com/en/4f9009a8cc/'
+  },
+  {
+    quoteText: 'Fate is in your hands and no one elses ',
+    quoteAuthor: 'Byron Pulsifer',
+    senderName: '',
+    senderLink: '',
+    quoteLink: 'http://forismatic.com/en/389f2ed688/'
+  },
+  {
+    quoteText:
+      'The smallest act of kindness is worth more than the grandest intention. ',
+    quoteAuthor: 'Oscar Wilde',
+    senderName: '',
+    senderLink: '',
+    quoteLink: 'http://forismatic.com/en/0a2bafa1a9/'
+  },
+  {
+    quoteText: 'He who knows himself is enlightened.  ',
+    quoteAuthor: 'Lao Tzu ',
+    senderName: '',
+    senderLink: '',
+    quoteLink: 'http://forismatic.com/en/d783187ba9/'
+  },
+  {
+    quoteText:
+      'You were not born a winner, and you were not born a loser. You are what you make yourself be. ',
+    quoteAuthor: 'Lou Holtz ',
+    senderName: '',
+    senderLink: '',
+    quoteLink: 'http://forismatic.com/en/7d1dc47b11/'
+  },
+  {
+    quoteText:
+      "There is nothing in a caterpillar that tells you it's going to be a butterfly.",
+    quoteAuthor: 'Buckminster Fuller',
+    senderName: '',
+    senderLink: '',
+    quoteLink: 'http://forismatic.com/en/c9007aae7e/'
+  },
+  {
+    quoteText: 'Wisdom is the supreme part of happiness. ',
+    quoteAuthor: 'Sophocles',
+    senderName: '',
+    senderLink: '',
+    quoteLink: 'http://forismatic.com/en/ca7cf76de7/'
+  },
+  {
+    quoteText:
+      'The secret of joy in work is contained in one word — excellence. To know how to do something well is to enjoy it. ',
+    quoteAuthor: 'Pearl Buck:',
+    senderName: '',
+    senderLink: '',
+    quoteLink: 'http://forismatic.com/en/6d6680427f/'
+  },
+  {
+    quoteText:
+      'Courage is the discovery that you may not win, and trying when you know you can lose.',
+    quoteAuthor: '',
+    senderName: '',
+    senderLink: '',
+    quoteLink: 'http://forismatic.com/en/e433b56a5d/'
+  },
+  {
+    quoteText:
+      "You have enemies? Good. That means you've stood up for something, sometime in your life.",
+    quoteAuthor: 'Winston Churchill',
+    senderName: '',
+    senderLink: '',
+    quoteLink: 'http://forismatic.com/en/2440d0e156/'
+  },
+  {
+    quoteText: 'Be the change that you want to see in the world. ',
+    quoteAuthor: 'Mohandas Gandhi ',
+    senderName: '',
+    senderLink: '',
+    quoteLink: 'http://forismatic.com/en/8ea44b2059/'
+  },
+  {
+    quoteText: 'You only lose what you cling to.',
+    quoteAuthor: 'Buddha',
+    senderName: '',
+    senderLink: '',
+    quoteLink: 'http://forismatic.com/en/1255909619/'
+  },
+  {
+    quoteText: 'Think how hard physics would be if particles could think.',
+    quoteAuthor: 'Murray Gell-Mann',
+    senderName: '',
+    senderLink: '',
+    quoteLink: 'http://forismatic.com/en/03ff60d7e1/'
   }
 ]
 // http://api.forismatic.com/api/1.0/?method=getQuote&key=&format=json&lang=en
