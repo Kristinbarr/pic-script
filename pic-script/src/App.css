@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Spinnaker&display=swap');
+
+.App {
+  display: flex;
+  justify-content: center;
+  background: #fff7eb;
+}
+.container {
+  position: relative;
+  height: 100vh;
+  font-family: 'Spinnaker', sans-serif;
+  color: rgb(68, 68, 68);
+}
+.container button {
+  display: inline-block;
+  padding: 1rem;
+  border: none;
+  margin: 1rem;
+  cursor: pointer;
+  color: rgb(68, 68, 68);
+  border: 1px solid #dddddd;
+  font-size: .8rem;
+  background: #ffffff;
+  transform: translate(0,-10px);
+}
+.container h1 {
+  display: inline-block;
+  margin: 2rem;
+  padding: 0;
+  font-size: 3rem;
+  transform: translate(0, 0);
+  text-shadow: 0 1px #fff7eb, 0 -1px #fff7eb, 1px 0 #fff7eb, -1px 0 #fff7eb;
+}
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: auto;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 1rem 3rem 2rem 3rem;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow:  0 -1px #ddd, -1px 0 #ddd;
+  border: 1px solid #ffffff5b;
+}
+
+.centered h1 {
+  font-size: 2.6rem;
+  line-height: 2.8rem;
+  transform: translate(-3px, 10px);
+}
+.centered button {
+  display: inline-block;
+  padding: 1rem;
+  border: none;
+}
