@@ -5,42 +5,42 @@ import Loader from 'react-loader-spinner'
 import { getPic, getQuote } from '../actions'
 
 const PicDisplay = (props) => {
-  console.log('pic props', props)
-
-  handleClick = (e) => {
-    e.preventDefault()
-    props.getPic()
-    props.getQuote()
-  }
-
-
   return (
     <div className='container'>
-      <button onClick={props.getPic}>
+      <div className='img-header-container'>
         {props.picIsLoading ? (
-          <Loader type='Triangle' color='#00BFFF' height='20' width='20' />
+          <div> </div>
         ) : (
-          'NEW PICTURE'
+          <img src={props.pic} alt='randomly generated' />
         )}
-      </button>
-      <h1>PIC SCRIPT</h1>
-      {props.picIsLoading ? (
-        <div> </div>
-      ) : (
-        <img src={props.pic} alt='quote overlay' />
-      )}
+        <h1>PIC SCRIPT</h1>
+        <button onClick={props.getPic} className='pic-button'>
+          {props.picIsLoading ? (
+            <Loader type='ThreeDots' color='#BBBBBB' height={10} width={90} />
+          ) : (
+            'NEW PICTURE'
+          )}
+        </button>
+        <button onClick={props.getQuote} className='quote-button'>
+          {props.quoteIsLoading ? (
+            <Loader type='ThreeDots' color='#BBBBBB' height={10} width={60} />
+          ) : (
+            'NEW QUOTE'
+          )}
+        </button>
+      </div>
     </div>
   )
 }
 
 const mapStateToProps = (state) => {
   return {
-    pic: state.pic,
-    isLoading: state.isLoading
+    pic: state.picReducer.pic,
+    picIsLoading: state.picReducer.picIsLoading
   }
 }
 
 export default connect(
   mapStateToProps,
-  { getPic }
+  { getPic, getQuote }
 )(PicDisplay)

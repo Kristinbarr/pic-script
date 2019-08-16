@@ -7,4 +7,5 @@ const rootReducer = combineReducers({
   picReducer,
   quoteReducer
 })
+
 export default rootReducer
