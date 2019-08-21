@@ -3,7 +3,7 @@
 .App {
   display: flex;
   justify-content: center;
-  background: #fff7eb;
+  background: #fffbf4;
 }
 .container {
   position: relative;
@@ -29,7 +29,7 @@
   padding: 0;
   font-size: 3rem;
   transform: translate(0, 0);
-  text-shadow: 0 1px #fff7eb, 0 -1px #fff7eb, 1px 0 #fff7eb, -1px 0 #fff7eb;
+  text-shadow: 0 1px #fffbf4, 0 -1px #fffbf4, 1px 0 #fffbf4, -1px 0 #fffbf4;
 }
 img {
   position: absolute;
