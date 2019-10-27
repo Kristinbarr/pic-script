@@ -7,7 +7,7 @@ import styled from 'styled-components'
 
 const Button = styled.button`
   display: inline-block;
-  padding: 1rem;
+  padding: .5rem 1rem;
   border: none;
   margin: 1rem;
   cursor: pointer;
@@ -43,7 +43,7 @@ const PicDisplay = (props) => {
         ) : (
           <Img src={props.pic} alt='randomly generated' />
         )}
-        <H1>PIC SCRIPT</H1>
+        {/* <H1>PIC SCRIPT</H1> */}
         <Button onClick={props.getPic} className='pic-button'>
           {props.picIsLoading ? (
             <Loader type='ThreeDots' color='#BBBBBB' height={10} width={90} />
