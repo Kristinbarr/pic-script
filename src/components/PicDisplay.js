@@ -7,16 +7,22 @@ import styled from 'styled-components'
 
 const Button = styled.button`
   display: inline-block;
-  padding: .5rem 1rem;
-  border: none;
+  padding: 0.5rem 1rem;
   margin: 1rem;
   cursor: pointer;
   color: rgb(68, 68, 68);
   border: 1px solid #dddddd;
   font-size: 0.8rem;
-  background: rgba(255,255,255,0.3);
   transform: translate(0, -10px);
-`
+  background-color: rgba(255,255,255,0.3);
+  transition: 0.3s;
+
+  &:hover {
+    background-color: rgba(255,255,255, 1);
+  }
+`;
+
+
 const H1 = styled.h1`
   display: inline-block;
   margin: 2rem;
@@ -32,7 +38,7 @@ const Img = styled.img`
   transform: translate(-50%, -50%);
   width: 100vw;
   height: auto;
-`
+`;
 
 const PicDisplay = (props) => {
   return (
