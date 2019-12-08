@@ -6,3 +6,4 @@
 ```$ npm run deploy```
 - add, commit, push source code to the `source-code` branch
 
+### Project uses yarn, don't delete yarn file
