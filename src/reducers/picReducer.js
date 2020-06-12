@@ -4,8 +4,11 @@ import {
   FETCH_PIC_FAILURE
 } from '../actions'
 
+const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+
 export const initialState = {
-  pic: 'https://picsum.photos/1000/600/',
+  pic: `https://picsum.photos/${vw}/${vh}/`,
   picIsLoading: false,
   error: ''
 }
@@ -15,7 +18,6 @@ export const picReducer = (state = initialState, action) => {
     case FETCH_PIC_START:
       return {
         ...state,
-        pic: '',
         picIsLoading: true,
         error: ''
       }
@@ -23,7 +25,7 @@ export const picReducer = (state = initialState, action) => {
         return {
           ...state,
           picIsLoading: false,
-          pic: 'https://picsum.photos/1000/600/',
+          pic: `https://picsum.photos/${vw}/${vh}/`,
           error: ''
         }
       case FETCH_PIC_FAILURE:
